@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project = "track_tweets"
   s.homepage = "https://github.com/galetahub/track_tweets_client"
   
-  s.files = Dir["{app,lib,config}/**/*"] + ["MIT-LICENSE", "Rakefile", "Gemfile", "README.rdoc"]
+  s.files = Dir["{app,lib,config}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["{test}/**/*"]
   s.extra_rdoc_files = ["README.rdoc"]
   s.require_paths = ["lib"]
