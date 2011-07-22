@@ -5,8 +5,16 @@ module TrackTweets
         resource post("/groups.#{format}", :body => { :group => attributtes })
       end
       
-      def find(options)
+      def all(options = {})
         resource get("/groups.#{format}", :query => options)
+      end
+      
+      def find(id, options = {})
+        resource get("/groups/#{id}.#{format}", :query => options)
+      end
+      
+      def delete(id)
+        resource delete("/groups/#{id}.#{format}")
       end
     end
   end

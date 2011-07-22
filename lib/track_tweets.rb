@@ -1,6 +1,7 @@
 module TrackTweets
   autoload :Client, 'track_tweets/client'
-  autoload :Group, 'track_tweets/group' 
+  autoload :Group, 'track_tweets/group'
+  autoload :TrackItem, 'track_tweets/track_item' 
   
   mattr_accessor :username
   @@username = 'demo'
@@ -13,6 +14,9 @@ module TrackTweets
   
   mattr_accessor :api_version
   @@api_version = 'v1'
+  
+  mattr_accessor :group_id
+  @@group_id = nil
   
   def self.setup
     yield self

@@ -1,1 +1,25 @@
 = Track tweets API
+
+== Install
+
+  gem 'track_tweets'
+
+== Configuration
+
+  TrackTweets.setup do |config|
+    config.username = 'demo'
+    config.password = 'demo'
+    config.format = :json
+    config.api_version = 'v1'
+    config.group_id = 'your group id'
+  end
+
+== Usage
+
+  group = TrackTweets::Group.create(
+      :name => 'McDonals Euro Kids', 
+      :timeout => 2 * 60 * 60, # 2 hours
+      :delay => 50 * 60)       # 50 minutes
+
+
+Copyright (c) 2011 Aimbulance, released under the MIT license
