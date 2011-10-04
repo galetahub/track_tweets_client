@@ -13,7 +13,7 @@ module TrackTweets
         resource get("/track_items/#{id}.#{format}", :query => options)
       end
       
-      def delete(id)
+      def destroy(id)
         resource delete("/track_items/#{id}.#{format}")
       end
       

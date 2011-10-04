@@ -20,6 +20,9 @@
       :name => 'McDonals Euro Kids', 
       :timeout => 2 * 60 * 60, # 2 hours
       :delay => 50 * 60)       # 50 minutes
+   
+  
+  TrackTweets::Group.destroy(group.id)
 
 
 Copyright (c) 2011 Aimbulance, released under the MIT license

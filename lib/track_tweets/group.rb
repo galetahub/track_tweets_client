@@ -13,7 +13,7 @@ module TrackTweets
         resource get("/groups/#{id}.#{format}", :query => options)
       end
       
-      def delete(id)
+      def destroy(id)
         resource delete("/groups/#{id}.#{format}")
       end
     end
