@@ -16,6 +16,10 @@ module TrackTweets
       def destroy(id)
         resource delete("/groups/#{id}.#{format}")
       end
+      
+      def clear_track_tweets(id)
+        resource delete("/groups/#{id}/track_items/all.#{format}")
+      end
     end
   end
 end
